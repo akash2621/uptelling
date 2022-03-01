@@ -998,6 +998,89 @@ function SectionBGSAP36() {
 }
 // ========== SLIDE 8 CONTENT SUBHEADING SECTION END ==========
 
+//  ********************************************************************* SLIDE 10 *********************************************************************
+//  ********************************************************************* SLIDE 10 *********************************************************************
+//  ********************************************************************* SLIDE 10 *********************************************************************
+//  ********************************************************************* SLIDE 10 *********************************************************************
+
+// ========== SLIDE 8 LOGO ANIMATION SECTION START ==========
+function SectionBGSAP37() {
+    let SectionBGSAPTL37 = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#SectionJ",
+            scrub: 0,
+            start: () =>
+                "top top-=" +
+                (document.querySelector("#SectionJ").offsetLeft - window.innerWidth),
+            end: () => "+=" + document.querySelector("#SectionJ").offsetWidth,
+            markers: "true"
+        }
+    });
+    SectionBGSAPTL37.from("#SectionJ .logo_uptelling", {
+        ease: Linear.easeNone,
+    })
+    .from("#SectionJ .logo_uptelling", {
+        ease: Linear.easeNone,
+    })
+    .from("#SectionJ .logo_uptelling", {
+        x: 700, y: 250 , opacity: 0,
+        ease: Linear.easeNone,
+    })
+}
+// ========== SLIDE 8 LOGO ANIMATION SECTION END ==========
+
+// ========== SLIDE 8 LOGO ANIMATION SECTION START ==========
+function SectionBGSAP38() {
+    let SectionBGSAPTL38 = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#SectionJ",
+            scrub: 0,
+            start: () =>
+                "top top-=" +
+                (document.querySelector("#SectionJ").offsetLeft - window.innerWidth),
+            end: () => "+=" + document.querySelector("#SectionJ").offsetWidth,
+            markers: "true"
+        }
+    });
+    SectionBGSAPTL38.from("#SectionJ .seactionj_section_head", {
+        ease: Linear.easeNone,
+    })
+    .from("#SectionJ .seactionj_section_head", {
+        ease: Linear.easeNone,
+    })
+    .from("#SectionJ .seactionj_section_head", {
+        x: -600, y: 0, opacity: 0,
+        ease: Linear.easeNone,
+    })
+}
+// ========== SLIDE 8 LOGO ANIMATION SECTION END ==========
+
+// ========== SLIDE 8 LOGO ANIMATION SECTION START ==========
+function SectionBGSAP39() {
+    let SectionBGSAPTL39 = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#SectionJ",
+            scrub: 0,
+            start: () =>
+                "top top-=" +
+                (document.querySelector("#SectionJ").offsetLeft - window.innerWidth),
+            end: () => "+=" + document.querySelector("#SectionJ").offsetWidth,
+            markers: "true"
+        }
+    });
+    SectionBGSAPTL39.from("#SectionJ .seactionj_section p", {
+        ease: Linear.easeNone,
+    })
+    .from("#SectionJ .seactionj_section p", {
+        ease: Linear.easeNone,
+    })
+    .from("#SectionJ .seactionj_section p", {
+        x: 600, y: 0, opacity: 0,
+        ease: Linear.easeNone,
+    })
+}
+// ========== SLIDE 8 LOGO ANIMATION SECTION END ==========
+
 
 window.onload = () => {
     GSAPHorizontalScroll();
@@ -1044,4 +1127,8 @@ window.onload = () => {
     SectionBGSAP34();
     SectionBGSAP35();
     SectionBGSAP36();
+    // SLIDE 10
+    SectionBGSAP37();
+    SectionBGSAP38();
+    SectionBGSAP39();
 };
